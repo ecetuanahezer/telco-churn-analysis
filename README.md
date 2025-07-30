@@ -1,40 +1,38 @@
-Telco Customer Churn Prediction
-This project analyzes customer data from a fictional telecommunications company to predict churn — whether a customer is likely to cancel their subscription. It uses Python, pandas, and scikit-learn for end-to-end data science workflow including preprocessing, modeling, and evaluation.
+# Telco Customer Churn Prediction
 
-Project Overview
-Dataset: Telco Customer Churn
-Goal: Predict if a customer will churn (Churn = Yes/No)
-Tech stack: Python, Jupyter Notebook, scikit-learn, pandas, matplotlib, seaborn
+This project analyzes customer data from a fictional telecommunications company to predict **churn**  whether a customer is likely to cancel their subscription. The goal is to apply classification models using Python and evaluate their effectiveness using multiple metrics.
 
-Steps Covered
-- Data Loading & Exploration
+## Tools & Libraries
 
+- Python
+- pandas, numpy
+- matplotlib, seaborn
+- scikit-learn
+- Jupyter Notebook
+
+## Workflow
+
+### Data Exploration
 - Summary statistics
+- Visual analysis (histograms, count plots, etc.)
+- Handling missing values
 
-- Missing value handling
+### Preprocessing
+- Label Encoding for binary categorical variables
+- One-Hot Encoding for multi-category variables
+- Feature scaling using `StandardScaler`
 
-- Data visualization
-
-- Preprocessing
-
-- Label Encoding (binary categorical features)
-
-- One-Hot Encoding (multi-category features)
-
-- Scaling with StandardScaler
-
-- Modeling
-
+### Modeling
 - Logistic Regression
-
 - Random Forest Classifier
 
-- Performance evaluation (Accuracy, Confusion Matrix, ROC-AUC)
+### Evaluation
+- Accuracy and Confusion Matrix
+- ROC Curve and AUC Score
+- Classification Report
+- Feature Importance (Random Forest)
 
-- Evaluation
+## Files
 
-- Classification report
-
-- ROC Curve
-
-- Feature importance (Random Forest)
+- `analysis.ipynb`: Full notebook including preprocessing, modeling, and evaluation
+- `WA_Fn-UseC_-Telco-Customer-Churn.csv`: Dataset used (Telco Customer Churn)
